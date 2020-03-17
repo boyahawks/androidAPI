@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView app:cardCornerRadius="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abstractbg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/strteam"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Atlanta Hawks"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+            <TextView
+                android:id="@+id/strteamshort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="14dp"
+                android:text="ATL"
+                android:textColor="#ffffff"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/idteam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="134880"
+                    android:textColor="#ffffff"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/strsport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Basketball"
+                        android:textColor="#ffffff"
+                        />
+                    <TextView
+                        android:id="@+id/intformedyear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="200dp"
+                        android:textSize="14dp"
+                        android:text="1946"
+                        android:textColor="#ffffff"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Description"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/strstadiumdescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:text="@string/deskripsi"
+                        android:textColor="@color/text"
+                        />
+
+                    <Button
+                        android:id="@+id/backhome"
+                        android:background="@color/colorAccent"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Back To Home"/>
+
+                    <Button
+                        android:id="@+id/btnfavorit"
+                        android:background="@color/colorAccent"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#ffffff"
+                        android:onClick="Pindah"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Favorit"/>
+
+                    <View
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#51454545"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>
